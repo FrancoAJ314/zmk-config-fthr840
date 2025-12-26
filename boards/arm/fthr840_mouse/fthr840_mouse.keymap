@@ -1,0 +1,16 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+ / {
+     keymap {
+         compatible = "zmk,keymap";
+
+         default_layer {
+             bindings = <
+                 &btn1  // Left click
+                 &btn2  // Right click
+                 &btn3  // Middle click (if you have one)
+             >;
+         };
+     };
+ };

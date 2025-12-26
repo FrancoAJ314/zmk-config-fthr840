@@ -1,6 +1,6 @@
 / {
     chosen {
-        zmk,keyboard = <&keyboard>;
+        zmk,keyboard = <&keyboard>;  // Required, even for mouse-only
     };
 };
 
@@ -8,6 +8,7 @@
     compatible = "zmk,keyboard";
 };
 
+// Define GPIOs for your buttons
 &button_1 {
     label = "LEFT_CLICK";
     compatible = "zmk,behavior-mouse-button";

@@ -1,6 +1,6 @@
 / {
     chosen {
-        zmk,keyboard = <&keyboard>;
+        zmk,keyboard = <&keyboard>;  // required even for mouse
     };
 };
 
@@ -8,20 +8,20 @@
     compatible = "zmk,keyboard";
 };
 
-/ {
-    mouse_buttons {
-        compatible = "zmk,behavior-mouse-button";
+&button_1 {
+    label = "LEFT_CLICK";
+    compatible = "zmk,behavior-mouse-button";
+    gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+};
 
-        button_1: left {
-            gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
-        };
+&button_2 {
+    label = "RIGHT_CLICK";
+    compatible = "zmk,behavior-mouse-button";
+    gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+};
 
-        button_2: right {
-            gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
-        };
-
-        button_3: middle {
-            gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
-        };
-    };
+&button_3 {
+    label = "MIDDLE_CLICK";
+    compatible = "zmk,behavior-mouse-button";
+    gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
 };

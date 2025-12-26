@@ -1,6 +1,6 @@
 / {
     chosen {
-        zmk,keyboard = <&keyboard>;  // required even for mouse
+        zmk,keyboard = <&keyboard>;
     };
 };
 

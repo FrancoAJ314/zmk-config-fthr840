@@ -7,4 +7,4 @@ shield:
   - none      # no additional shield needed for the mouse
 
 overlays:
-  - config/boards/shields/fthr840.overlay  # your overlay file path
+  - boards/shields/fthr840.overlay  # your overlay file path

@@ -1,0 +1,27 @@
+/ {
+    chosen {
+        zmk,keyboard = <&keyboard>;
+    };
+};
+
+&keyboard {
+    compatible = "zmk,keyboard";
+};
+
+/ {
+    mouse_buttons {
+        compatible = "zmk,behavior-mouse-button";
+
+        button_1: left {
+            gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+        };
+
+        button_2: right {
+            gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+        };
+
+        button_3: middle {
+            gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+        };
+    };
+};

@@ -2,9 +2,6 @@
 
 board:
   - nrf52840_m2   # your Feather board target
-
-shield:
-  - none      # no additional shield needed for the mouse
-
+  
 overlays:
   - boards/shields/fthr840.overlay  # your overlay file path

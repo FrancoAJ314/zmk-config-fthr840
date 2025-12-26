@@ -1,7 +1,7 @@
 # Build configuration for Feather nRF52840 mouse
 
 board:
-  - nrfmicro/nrf52840   # your Feather board target
+  - nrf52840_m2   # your Feather board target
 
 shield:
   - none      # no additional shield needed for the mouse
